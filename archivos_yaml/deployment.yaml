@@ -20,13 +20,6 @@ spec:
         image: mrodriguezcursos0602/pf_imagen03:latest  # Imagen del contenedor.
         ports:
         - containerPort: 7654  # Puerto expuesto dentro del contenedor.
-        resources:
-          requests:
-            cpu: "500m"
-            memory: "1Gi"
-          limits:
-            cpu: "1"
-            memory: "2Gi"
         envFrom:
             - configMapRef:
                 name: pf-app-config
